@@ -14,14 +14,13 @@
     "build": "tsc -p tsconfig.json",
     "lint:ts": "eslint \"./**/*.{ts,tsx}\"",
     "lint:js": "eslint \"./**/*.js\"",
-    "lint:markdown": "markdownlint-cli2 \"*.md\"",
     "lint:fix": "npm-run-all \"lint:!(fix|links) -- --fix\"",
     "lint": "npm-run-all \"lint:!(fix)\"",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "engines": {
-    "node": ">= 24.10.0"
+    "node": ">= 22.20.0"
   },
   "license": "MIT",
   "dependencies": {
@@ -38,7 +37,6 @@
     "cross-env": "^10.1.0",
     "eslint": "^9",
     "jest": "^30.2.0",
-    "markdownlint-cli2": "^0.19.1",
     "nodemon": "^3.1.11",
     "npm-run-all2": "^8.0.4",
     "ts-jest": "^29.4.6",
