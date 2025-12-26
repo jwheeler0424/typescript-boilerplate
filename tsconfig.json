@@ -10,7 +10,7 @@
     "target": "esnext",
     // For nodejs:
     "lib": ["esnext"],
-    "types": ["node", "jest"],
+    "types": ["node", "vitest/globals"],
 
     // Other Outputs
     "sourceMap": true,
@@ -36,6 +36,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "__tests__"],
   "exclude": ["node_modules", "build", "dist"]
 }
